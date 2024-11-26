@@ -1,0 +1,162 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #f0f4f8, #d9e4f5);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: #f0f4f8;
+    padding-bottom: 100px; /* Espaço extra para não sobrepor o rodapé */
+}
+
+/* Container principal do login */
+.login-container {
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Título do login */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Estilo para os campos de input */
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #42a5f5;
+    box-shadow: 0 0 5px rgba(66, 165, 245, 0.3);
+    outline: none;
+}
+
+/* Botão de login (Entrar) */
+button {
+    padding: 1rem;
+    background: linear-gradient(90deg, #42e695, #3bb2b8);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #3bb2b8, #42e695);
+    transform: scale(1.05);
+}
+
+/* Estilos para o botão "Voltar" */
+.btn-voltar {
+    padding: 1rem;
+    background: linear-gradient(90deg, #ff6f61, #ff9671);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem; /* Distância entre os botões */
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.btn-voltar:hover {
+    background: linear-gradient(90deg, #ff9671, #ff6f61);
+    transform: scale(1.05);
+}
+
+/* Links adicionais */
+.links {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Estilo para "Esqueci minha senha!" */
+.link-esqueci-senha {
+    color: #ff6f61;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.link-esqueci-senha:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para "Cadastrar-se!" */
+.link-cadastrar-se {
+    color: #42a5f5;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.link-cadastrar-se:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé fixo na parte inferior */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background-color: #283e51; /* Cor de fundo do rodapé */
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 1.5rem 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button,
+    .btn-voltar {
+        font-size: 1rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+}

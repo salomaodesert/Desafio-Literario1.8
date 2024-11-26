@@ -1,0 +1,213 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center; /* Centraliza o conteúdo principal */
+}
+
+/* Links e botões */
+a, button {
+    color: #0056b3;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+a:focus, button:focus {
+    outline: 3px solid #0056b3; /* Destaque visível para navegação por teclado */
+    outline-offset: 2px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover, a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* Botão sair no lado esquerdo */
+.logout-link {
+    position: absolute; /* Permite posicionamento personalizado */
+    top: 20px; /* Distância do topo da página */
+    left: 20px; /* Distância da borda esquerda */
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #dc3545; /* Cor vermelha */
+    border: 2px solid #b71c1c; /* Borda vermelha mais escura */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-link:hover {
+    background-color: #b71c1c;
+    border-color: #dc3545;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    position: relative; /* Necessário para o posicionamento do botão com `absolute` */
+    display: flex;
+    flex-direction: column; /* Empilha os elementos */
+    align-items: center; /* Centraliza horizontalmente o conteúdo principal */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    text-align: center; /* Centraliza o texto */
+}
+
+
+/* Seções */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #0056b3;
+    text-align: center; /* Centraliza os títulos */
+}
+
+/* Formulários */
+form {
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Feedback de mensagens */
+.mensagem {
+    background-color: #e7f4e4;
+    color: #317b31;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Foco visível para navegação */
+input:focus, textarea:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+}
+
+/* Botões de ação */
+button[type="button"] {
+    background-color: #6c757d;
+}
+
+button[type="button"]:hover {
+    background-color: #5a6268;
+}
+/* Botão "Início" fixado no final da página */
+.scroll-to-top-btn {
+    position: fixed;  /* Fixa o botão na tela */
+    bottom: 20px;     /* Distância do final da página */
+    right: 20px;      /* Distância da borda direita */
+    background-color: #0073e6; /* Cor azul */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;  /* Botão arredondado */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;     /* Inicialmente escondido */
+    z-index: 1000;     /* Garante que o botão esteja acima de outros elementos */
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #005bb5; /* Cor mais escura quando o botão é hover */
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Tamanho do texto para acessibilidade */
+html {
+    font-size: 100%; /* 16px */
+}
+
+@media (max-width: 768px) {
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .header {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+}
+.mensagem-recebida {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.mensagem-recebida p {
+    margin: 5px 0;
+}

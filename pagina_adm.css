@@ -1,0 +1,152 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 60px; /* Espaço para o rodapé */
+}
+
+/* Container principal */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Tabela geral */
+table {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem 0;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #42a5f5;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botões de ação (aprovar, rejeitar, excluir) */
+button {
+    background-color: #42a5f5;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e88e5;
+}
+
+/* Estilo do botão "Voltar" */
+.btn.voltar {
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.btn.voltar:hover {
+    background-color: #d85c52;
+}
+
+/* Mensagens de sucesso ou erro */
+p {
+    font-size: 1.1rem;
+    color: rgb(243, 248, 243);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+p.error {
+    color: red;
+}
+
+/* Estilo para o formulário dentro da tabela */
+form {
+    display: inline;
+    margin-right: 10px;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+/* Estilos para o botão "Sair" no canto superior esquerdo */
+.btn.sair {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #b94d4d;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.btn.sair:hover {
+    background-color: #d85c52;
+}
+
+/* Estilos para o botão "Início" no final da página */
+.btn.inicio {
+
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #70a8da;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.btn.inicio:hover {
+    background-color: #1e88e5;
+}
+
+/* Rodapé fixado no fundo da página */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #283e51;
+    color: white;
+    font-size: 0.9rem;
+}

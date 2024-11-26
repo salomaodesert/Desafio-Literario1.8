@@ -1,0 +1,266 @@
+/* Estilos gerais */
+body {
+    /* Define a fonte usada no corpo do site como Arial (ou uma fonte sans-serif como alternativa) */
+    font-family: 'Arial', sans-serif;
+    /* Remove as margens padrão do navegador */
+    margin: 0;
+    padding: 0;
+    /* Define a cor de fundo da página */
+    background-color: #f4f4f9;
+    /* Define a cor do texto */
+    color: #333;
+}
+
+header {
+    /* Centraliza o texto no cabeçalho */
+    text-align: center;
+    /* Adiciona um espaçamento interno de 2rem */
+    padding: 2rem;
+    /* Cria um gradiente de cor para o fundo do cabeçalho */
+    background: linear-gradient(90deg, #ff5f6d, #ffc371);
+    /* Define a cor do texto como branco */
+    color: #fff;
+}
+
+header .highlight-text {
+    /* Define o tamanho da fonte para 2.5rem */
+    font-size: 2.5rem;
+    /* Torna o texto em negrito */
+    font-weight: bold;
+    /* Adiciona uma sombra no texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+header .description-text {
+    /* Define o tamanho da fonte para 1.2rem */
+    font-size: 1.2rem;
+    /* Adiciona um pequeno espaço acima do texto */
+    margin-top: 0.5rem;
+    /* Torna o texto em itálico */
+    font-style: italic;
+}
+
+main {
+    /* Adiciona um espaçamento interno de 2rem ao conteúdo principal */
+    padding: 2rem;
+}
+
+.highlight-bubble {
+    /* Define o tamanho da fonte para 1.8rem */
+    font-size: 1.8rem;
+    /* Torna o texto em negrito */
+    font-weight: bold;
+    /* Define a cor do texto como branco */
+    color: #fff;
+    /* Centraliza o texto */
+    text-align: center;
+    /* Aplica um gradiente de cor no fundo */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    /* Arredonda os cantos do elemento */
+    border-radius: 10px;
+    /* Adiciona um espaçamento interno de 1rem */
+    padding: 1rem;
+    /* Adiciona uma margem inferior */
+    margin-bottom: 1.5rem;
+    /* Adiciona uma sombra ao texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.rank-container {
+    /* Organiza os itens em uma coluna */
+    display: flex;
+    flex-direction: column;
+    /* Adiciona um espaço de 1.5rem entre os itens */
+    gap: 1.5rem;
+    /* Adiciona um espaço acima do container */
+    margin-top: 1rem;
+}
+
+.rank-bubble {
+    /* Define o fundo do elemento como branco */
+    background-color: #ffffff;
+    /* Adiciona uma borda de 1px de cor cinza */
+    border: 1px solid #e0e0e0;
+    /* Arredonda os cantos do elemento */
+    border-radius: 10px;
+    /* Adiciona um espaçamento interno de 1rem */
+    padding: 1rem;
+    /* Aplica uma sombra suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Transição suave para a transformação de movimento */
+    transition: transform 0.3s ease-in-out;
+}
+
+.rank-bubble:hover {
+    /* Quando o elemento é hover (passa o mouse por cima), ele se move para cima */
+    transform: translateY(-5px);
+}
+
+.rank-bubble h4 {
+    /* Define a cor do título como roxo */
+    color: #6a11cb;
+    /* Define o tamanho da fonte do título */
+    font-size: 1.5rem;
+    /* Adiciona um espaço abaixo do título */
+    margin-bottom: 0.5rem;
+}
+
+.rank-bubble p {
+    /* Define o tamanho da fonte do texto */
+    font-size: 1rem;
+    /* Adiciona uma margem pequena acima e abaixo do parágrafo */
+    margin: 0.3rem 0;
+}
+
+/* Botões de acesso */
+.button-container {
+    /* Organiza os botões em linha, centralizados */
+    display: flex;
+    justify-content: center;
+    /* Adiciona espaço entre os botões */
+    gap: 1.5rem;
+    /* Adiciona um espaço acima e abaixo do container de botões */
+    margin: 2rem 0;
+}
+
+.button {
+    /* Centraliza o conteúdo dentro dos botões */
+    text-align: center;
+}
+
+button {
+    /* Adiciona um espaçamento interno de 1rem em cima e embaixo, e 2rem nas laterais */
+    padding: 1rem 2rem;
+    /* Remove a borda do botão */
+    border: none;
+    /* Arredonda os cantos do botão */
+    border-radius: 5px;
+    /* Define o tamanho da fonte */
+    font-size: 1rem;
+    /* Torna o texto em negrito */
+    font-weight: bold;
+    /* Adiciona um cursor de mão para indicar interatividade */
+    cursor: pointer;
+    /* Define uma transição suave para a transformação e cor do botão */
+    transition: transform 0.2s, background 0.3s ease-in-out;
+}
+
+/* Botões personalizados */
+.professor-button {
+    /* Cria um gradiente de cor rosa para o botão de professor */
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    color: white;
+}
+
+.professor-button:hover {
+    /* Inverte as cores do gradiente quando o botão é hover */
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    /* Aumenta um pouco o tamanho do botão */
+    transform: scale(1.05);
+}
+
+.aluno-button {
+    /* Cria um gradiente de cor verde para o botão de aluno */
+    background: linear-gradient(90deg, #42e695, #3bb2b8);
+    color: white;
+}
+
+.aluno-button:hover {
+    /* Inverte as cores do gradiente quando o botão é hover */
+    background: linear-gradient(90deg, #3bb2b8, #42e695);
+    /* Aumenta um pouco o tamanho do botão */
+    transform: scale(1.05);
+}
+
+.admin-button {
+    /* Cria um gradiente de cor amarela para o botão de admin */
+    background: linear-gradient(90deg, #f7971e, #ffd200);
+    color: white;
+}
+
+.admin-button:hover {
+    /* Inverte as cores do gradiente quando o botão é hover */
+    background: linear-gradient(90deg, #ffd200, #f7971e);
+    /* Aumenta um pouco o tamanho do botão */
+    transform: scale(1.05);
+}
+
+/* Formulário */
+form {
+    /* Define o fundo do formulário como branco */
+    background-color: #fff;
+    /* Adiciona uma borda suave */
+    border: 1px solid #ddd;
+    /* Arredonda os cantos do formulário */
+    border-radius: 10px;
+    /* Adiciona um espaçamento interno de 1.5rem */
+    padding: 1.5rem;
+    /* Aplica uma sombra suave */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    /* Define a largura máxima do formulário */
+    max-width: 500px;
+    /* Centraliza o formulário na tela */
+    margin: auto;
+}
+
+form label {
+    /* Torna o texto do rótulo em negrito */
+    font-weight: bold;
+    /* Exibe o rótulo como um bloco e adiciona um espaço abaixo */
+    display: block;
+    margin-bottom: 0.5rem;
+    /* Define a cor do rótulo */
+    color: #444;
+}
+
+form input,
+form textarea,
+form select {
+    /* Define a largura dos campos para 100% do espaço disponível */
+    width: 100%;
+    /* Adiciona um padding interno */
+    padding: 0.8rem;
+    /* Adiciona um espaço abaixo do campo */
+    margin-bottom: 1rem;
+    /* Define a borda dos campos */
+    border: 1px solid #ccc;
+    /* Arredonda os cantos dos campos */
+    border-radius: 5px;
+    /* Define o tamanho da fonte */
+    font-size: 1rem;
+}
+
+form button {
+    /* Faz com que o botão ocupe toda a largura disponível */
+    display: block;
+    width: 100%;
+    /* Cria um gradiente no fundo do botão */
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+form button:hover {
+    /* Inverte as cores do gradiente quando o botão é hover */
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    /* Aumenta um pouco o tamanho do botão */
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    /* Centraliza o texto no rodapé */
+    text-align: center;
+    /* Adiciona um espaçamento interno de 1rem */
+    padding: 1rem;
+    /* Define a cor de fundo do rodapé */
+    background-color: #283e51;
+    /* Define a cor do texto como branco */
+    color: #fff;
+    /* Adiciona um espaço acima do rodapé */
+    margin-top: 2rem;
+    /* Define um tamanho menor para a fonte no rodapé */
+    font-size: 0.9rem;
+}
